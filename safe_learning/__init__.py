@@ -22,7 +22,7 @@ analysis. It can be used to compute the region of attraction and together with
 Approximate Dynamics Programming
 --------------------------------
 
-We use approximate dynamics programming to compute value functions.
+We use approximate dynamic programming to compute value functions.
 
 .. autosummary::
 
@@ -92,10 +92,12 @@ from .configuration import Configuration
 config = Configuration()
 del Configuration
 
+from .compute import *
 from .functions import *
 from .lyapunov import *
 from .reinforcement_learning import *
 from . import utilities
+from . import compute
 
 try:
     from pytest import main as run_tests

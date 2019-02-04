@@ -101,6 +101,7 @@ class PolicyIteration(object):
         expected_values = self.value_function(next_states)
 
         # Perform value update
+        assert isinstance(expected_values, object)
         updated_values = rewards + self.gamma * expected_values
 
         # Adjust the cost for the Lyapunov decrease

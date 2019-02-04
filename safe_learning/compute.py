@@ -4,12 +4,13 @@ import sys
 import os
 import importlib
 import numpy as np
-import scipy
+
 import tensorflow as tf
 from scipy import signal
 from matplotlib.colors import ListedColormap
 
-from safe_learning import config, DeterministicFunction, GridWorld
+from safe_learning import config
+from safe_learning.functions import DeterministicFunction, GridWorld
 from safe_learning.utilities import concatenate_inputs
 if sys.version_info.major == 2:
     import imp
